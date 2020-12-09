@@ -6,7 +6,7 @@ endmacro()
 
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../src)
-ncnn_add_example(lession_1)
+ncnn_add_example(lession_2)
 
 
 
