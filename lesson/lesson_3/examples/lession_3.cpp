@@ -9,9 +9,10 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-    ncnn::Net net;
-    ncnn::Layer layer;
-    ncnn::Blob blob;
+    ncnn::Net squeezenet;
+
+    squeezenet.load_param("../examples/squeezenet_v1.1.param");
+
     printf("yes\n");
     return 0;
 }

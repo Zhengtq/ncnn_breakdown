@@ -5,6 +5,7 @@ set(ncnn_SRCS
     net.cpp
     layer.cpp
     blob.cpp
+    paramdict.cpp
     )
 
 set(LIBRARY_OUTPUT_PATH ${ncnn_lession1_BINARY_DIR/src_lib/})
