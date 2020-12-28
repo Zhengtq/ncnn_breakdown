@@ -30,7 +30,7 @@ a breakdown of NCNN
 
 
 
-![lession-5](https://github.com/Zhengtq/ncnn_breakdown/blob/main/image/lesson-5.png)
+![lession-5](https://github.com/Zhengtq/ncnn_breakdown/blob/main/image/lession-5.png)
 
 ![Mat](https://github.com/Zhengtq/ncnn_breakdown/blob/main/image/Mat.png)
 
