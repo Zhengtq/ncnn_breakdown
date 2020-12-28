@@ -13,10 +13,8 @@ using namespace std;
 
 int main(int argc, char** argv) {
     ncnn::Net squeezenet;
-    squeezenet.load_param(
-        "/home/ztq/project/open_soruce/ncnn_my/me_impl/examples/squeezenet_v1.1.param");
-    squeezenet.load_model(
-        "/home/ztq/project/open_soruce/ncnn_my/me_impl/examples/squeezenet_v1.1.bin");
+    squeezenet.load_param("../examples/squeezenet_v1.1.param");
+    squeezenet.load_model("../examples/squeezenet_v1.1.bin");
 
     printf("yes\n");
     return 0;

@@ -18,7 +18,7 @@ int main(int argc, char** argv) {
     squeezenet.load_param("../examples/squeezenet_v1.1.param");
     squeezenet.load_model("../examples/squeezenet_v1.1.bin");
 
-    const char* imagepath = "../examples/320x320.bmp";
+    const char* imagepath = "../examples/dog.png";
     cv::Mat bgr = cv::imread(imagepath, 1);
     ncnn::Mat in = ncnn::Mat::from_pixels(bgr.data, ncnn::Mat::PIXEL_BGR, bgr.cols, bgr.rows);
 

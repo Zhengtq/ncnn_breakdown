@@ -151,7 +151,7 @@ inline void Mat::create(int _w, int _h, size_t _elemsize, Allocator* _allocator)
 
     dims = 2;
     w = _w;
-    h = _w;
+    h = _h;
     c = 1;
     cstep = (size_t)w * h;
     if (total() > 0) {
@@ -176,7 +176,7 @@ inline void Mat::create(int _w, int _h, size_t _elemsize, int _elempack, Allocat
 
     dims = 2;
     w = _w;
-    h = _w;
+    h = _h;
     c = 1;
     cstep = (size_t)w * h;
     if (total() > 0) {
@@ -202,7 +202,7 @@ inline void Mat::create(int _w, int _h, int _c, size_t _elemsize, Allocator* _al
 
     dims = 3;
     w = _w;
-    h = _w;
+    h = _h;
     c = _c;
     cstep = alignSize((size_t)w * h * elemsize, 16) / elemsize;
 
@@ -228,7 +228,7 @@ inline void Mat::create(int _w, int _h, int _c, size_t _elemsize, int _elempack,
 
     dims = 3;
     w = _w;
-    h = _w;
+    h = _h;
     c = _c;
     cstep = alignSize((size_t)w * h * elemsize, 16) / elemsize;
 
@@ -249,7 +249,7 @@ inline Mat Mat::clone(Allocator* allocator) const {
     else if (dims == 2)
         m.create(w, h, elemsize, elempack, allocator);
     else if (dims == 3)
-        m.create(w, h, w, elemsize, elempack, allocator);
+        m.create(w, h, c, elemsize, elempack, allocator);
 
     if (total() > 0) memcpy(m.data, data, total() * elemsize);
 
